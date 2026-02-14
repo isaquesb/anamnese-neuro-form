@@ -53,6 +53,7 @@ test.describe('Form Flow', () => {
     // Check export buttons are visible
     await expect(page.getByRole('button', { name: 'Baixar PDF' })).toBeVisible();
     await expect(page.getByRole('button', { name: 'Exportar JSON' })).toBeVisible();
+    await expect(page.getByRole('button', { name: 'Copiar como Texto' })).toBeVisible();
   });
 
   test('navigates back between steps', async ({ page }) => {

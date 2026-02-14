@@ -1,8 +1,10 @@
+import { useState } from 'react';
 import type { FullFormData } from '../types/form';
 import { headerQuestions, anamneseQuestions, tdahQuestions, tdahOptions, teaQuestions, teaSubSectionLabels } from '../data/questions';
 import { generatePDF } from '../utils/pdf';
 import { exportJSON } from '../utils/json-export';
-import { ArrowLeft, Download, FileJson, Home } from 'lucide-react';
+import { formatAsText } from '../utils/text-format';
+import { ArrowLeft, Download, FileJson, Home, ClipboardCopy, ClipboardCheck } from 'lucide-react';
 
 interface ReviewPageProps {
   formData: FullFormData;
@@ -26,9 +28,17 @@ function ReviewItem({ label, value, isText }: { label: string; value: string; is
 }
 
 export function ReviewPage({ formData, onBack, onBackToHome }: ReviewPageProps) {
+  const [copied, setCopied] = useState(false);
   const anamnese = formData.anamnese as Record<string, string>;
   const tdah = formData.tdah as Record<string, string>;
   const tea = formData.tea as Record<string, string>;
+
+  const handleCopyText = async () => {
+    const text = formatAsText(formData);
+    await navigator.clipboard.writeText(text);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
 
   return (
     <div className="max-w-3xl mx-auto px-4 py-8">
@@ -139,6 +149,17 @@ export function ReviewPage({ formData, onBack, onBackToHome }: ReviewPageProps) 
             className="flex-1 flex items-center justify-center gap-2 px-5 py-3 bg-emerald-600 text-white rounded-xl font-medium hover:bg-emerald-700 transition shadow-sm cursor-pointer"
           >
             <FileJson size={18} /> Exportar JSON
+          </button>
+          <button
+            onClick={handleCopyText}
+            className={`flex-1 flex items-center justify-center gap-2 px-5 py-3 rounded-xl font-medium transition shadow-sm cursor-pointer ${
+              copied
+                ? 'bg-green-600 text-white'
+                : 'bg-violet-600 text-white hover:bg-violet-700'
+            }`}
+          >
+            {copied ? <ClipboardCheck size={18} /> : <ClipboardCopy size={18} />}
+            {copied ? 'Copiado!' : 'Copiar como Texto'}
           </button>
         </div>
 
