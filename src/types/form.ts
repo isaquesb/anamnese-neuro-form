@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-const simNaoEnum = z.enum(['SIM', 'NÃO']).catch('NÃO');
+const simNaoEnum = z.enum(['SIM', 'NÃO', '']).catch('');
 
 export const anamneseSchema = z.object({
   patientName: z.string().min(1, 'Nome do avaliado é obrigatório'),
@@ -16,9 +16,9 @@ export const anamneseSchema = z.object({
   calmPregnancy: simNaoEnum,
   familyAccepted: simNaoEnum,
   prenatalCare: simNaoEnum,
-  deliveryType: z.enum(['CESÁRIA', 'NORMAL']).catch('NORMAL'),
+  deliveryType: z.enum(['CESÁRIA', 'NORMAL', '']).catch(''),
   deliveryComplications: simNaoEnum,
-  prematureOrFullTerm: z.enum(['PREMATURO', 'A TERMO']).catch('A TERMO'),
+  prematureOrFullTerm: z.enum(['PREMATURO', 'A TERMO', '']).catch(''),
   cryingBaby: simNaoEnum,
   hasSiblings: simNaoEnum,
   siblingsCount: z.string().optional().default(''),
@@ -61,7 +61,8 @@ const frequencyOption = z.enum([
   'Algumas vezes',
   'Frequentemente',
   'Muito frequentemente',
-]).catch('Nunca / Raramente');
+  '',
+]).catch('');
 
 export const tdahSchema = z.object({
   tdah1: frequencyOption,
@@ -80,7 +81,7 @@ export const tdahSchema = z.object({
   tdah14: frequencyOption,
 });
 
-const yesNoTea = z.enum(['Sim', 'Não']).catch('Não');
+const yesNoTea = z.enum(['Sim', 'Não', '']).catch('');
 
 export const teaSchema = z.object({
   tea1: yesNoTea,

@@ -16,15 +16,15 @@ describe('defaultFormData', () => {
     expect(defaultFormData.anamnese.gender).toBe('');
   });
 
-  it('has all TDAH fields set to "Nunca / Raramente"', () => {
+  it('has all TDAH fields set to empty string (unselected)', () => {
     for (const [, value] of Object.entries(defaultFormData.tdah)) {
-      expect(value).toBe('Nunca / Raramente');
+      expect(value).toBe('');
     }
   });
 
-  it('has all TEA fields set to "Não"', () => {
+  it('has all TEA fields set to empty string (unselected)', () => {
     for (const [, value] of Object.entries(defaultFormData.tea)) {
-      expect(value).toBe('Não');
+      expect(value).toBe('');
     }
   });
 

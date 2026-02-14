@@ -53,7 +53,7 @@ describe('anamneseSchema', () => {
     const result = anamneseSchema.safeParse(data);
     expect(result.success).toBe(true);
     if (result.success) {
-      expect(result.data.plannedPregnancy).toBe('NÃO');
+      expect(result.data.plannedPregnancy).toBe('');
     }
   });
 
@@ -84,7 +84,7 @@ describe('tdahSchema', () => {
     const result = tdahSchema.safeParse(data);
     expect(result.success).toBe(true);
     if (result.success) {
-      expect(result.data.tdah1).toBe('Nunca / Raramente');
+      expect(result.data.tdah1).toBe('');
     }
   });
 
@@ -115,7 +115,7 @@ describe('teaSchema', () => {
     const result = teaSchema.safeParse(data);
     expect(result.success).toBe(true);
     if (result.success) {
-      expect(result.data.tea1).toBe('Não');
+      expect(result.data.tea1).toBe('');
     }
   });
 
