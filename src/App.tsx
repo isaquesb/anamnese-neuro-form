@@ -6,6 +6,7 @@ import { importJSON } from './utils/json-export';
 import { HomePage } from './pages/HomePage';
 import { FormPage } from './pages/FormPage';
 import { ReviewPage } from './pages/ReviewPage';
+import { DarkModeToggle } from './components/DarkModeToggle';
 
 type AppScreen = 'home' | 'form' | 'review';
 
@@ -90,7 +91,8 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 dark:from-gray-900 dark:to-slate-900">
+      <DarkModeToggle />
       {screen === 'home' && (
         <HomePage onStartNew={handleStartNew} onImport={handleImport} />
       )}

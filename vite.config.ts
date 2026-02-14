@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  base: process.env.GITHUB_ACTIONS ? '/form-neuro/' : '/',
+  base: process.env.GITHUB_ACTIONS ? '/anamnese-neuro-form/' : '/',
   plugins: [react(), tailwindcss()],
   test: {
     globals: true,

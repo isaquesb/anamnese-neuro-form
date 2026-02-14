@@ -24,34 +24,34 @@ export function HomePage({ onStartNew, onImport }: HomePageProps) {
           <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-blue-600 text-white mb-4">
             <FileText size={32} />
           </div>
-          <h1 className="text-3xl font-bold text-[#1a365d]">Anamnese</h1>
-          <p className="text-gray-500 mt-2">Formulário neuropsicológico</p>
+          <h1 className="text-3xl font-bold text-[#1a365d] dark:text-blue-300">Anamnese</h1>
+          <p className="text-gray-500 dark:text-gray-400 mt-2">Formulário neuropsicológico</p>
         </div>
 
         <div className="space-y-4">
           <button
             onClick={onStartNew}
-            className="w-full flex items-center gap-4 px-6 py-5 bg-white rounded-xl border border-gray-200 hover:border-blue-400 hover:shadow-md transition-all group cursor-pointer"
+            className="w-full flex items-center gap-4 px-6 py-5 bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-blue-400 hover:shadow-md transition-all group cursor-pointer"
           >
-            <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-blue-50 text-blue-600 group-hover:bg-blue-100 transition">
+            <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 group-hover:bg-blue-100 dark:group-hover:bg-blue-900/50 transition">
               <Plus size={24} />
             </div>
             <div className="text-left">
-              <p className="font-semibold text-gray-800">Nova Anamnese</p>
-              <p className="text-sm text-gray-500">Iniciar um formulário em branco</p>
+              <p className="font-semibold text-gray-800 dark:text-gray-100">Nova Anamnese</p>
+              <p className="text-sm text-gray-500 dark:text-gray-400">Iniciar um formulário em branco</p>
             </div>
           </button>
 
           <button
             onClick={() => fileInputRef.current?.click()}
-            className="w-full flex items-center gap-4 px-6 py-5 bg-white rounded-xl border border-gray-200 hover:border-blue-400 hover:shadow-md transition-all group cursor-pointer"
+            className="w-full flex items-center gap-4 px-6 py-5 bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-blue-400 hover:shadow-md transition-all group cursor-pointer"
           >
-            <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-green-50 text-green-600 group-hover:bg-green-100 transition">
+            <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-green-50 dark:bg-green-900/30 text-green-600 dark:text-green-400 group-hover:bg-green-100 dark:group-hover:bg-green-900/50 transition">
               <Upload size={24} />
             </div>
             <div className="text-left">
-              <p className="font-semibold text-gray-800">Importar JSON</p>
-              <p className="text-sm text-gray-500">Carregar respostas de um arquivo salvo</p>
+              <p className="font-semibold text-gray-800 dark:text-gray-100">Importar JSON</p>
+              <p className="text-sm text-gray-500 dark:text-gray-400">Carregar respostas de um arquivo salvo</p>
             </div>
           </button>
 

@@ -1,73 +1,57 @@
-# React + TypeScript + Vite
+# Anamnese Neuropsicológica
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Formulário digital para anamnese neuropsicológica com rastreio para TDAH e TEA.
 
-Currently, two official plugins are available:
+**[Acessar aplicação](https://isaquesb.github.io/anamnese-neuro-form/)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Funcionalidades
 
-## React Compiler
+- Formulário multi-etapas com validação (Zod)
+- Campos condicionais (exibidos conforme respostas anteriores)
+- Cálculo automático de idade a partir da data de nascimento
+- Tela de revisão com todas as respostas
+- Exportação em PDF com formatação profissional
+- Exportação e importação de respostas em JSON
+- Persistência automática em sessionStorage (previne perda de dados)
+- Modo escuro / claro
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Seções do formulário
 
-## Expanding the ESLint configuration
+1. **Dados do avaliado** — nome, data de nascimento, idade, escolaridade, gênero
+2. **Anamnese** — histórico clínico e de desenvolvimento (~50 perguntas)
+3. **Rastreio para TDAH** — 14 itens com escala de frequência
+4. **Rastreio para TEA** — 12 itens sim/não
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Tecnologias
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- React 19 + TypeScript
+- Vite
+- Tailwind CSS v4
+- Zod (validação de schema)
+- jsPDF (geração de PDF)
+- Lucide React (ícones)
+- Vitest + Testing Library (testes unitários)
+- Playwright (testes E2E)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Desenvolvimento
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Testes
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+# Testes unitários
+npm test
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# Testes E2E
+npx playwright install --with-deps
+npm run build && npm run preview &
+npx playwright test
 ```
+
+## Deploy
+
+O deploy é feito automaticamente via GitHub Actions para GitHub Pages ao fazer push na branch `main`.

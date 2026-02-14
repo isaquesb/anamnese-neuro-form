@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --color-primary: #1a365d;
   --color-primary-light: #2a4a7f;
@@ -13,4 +15,10 @@ body {
   font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
   background-color: #f1f5f9;
   color: #1e293b;
+}
+
+.dark body,
+:is(.dark) body {
+  background-color: #0f172a;
+  color: #e2e8f0;
 }

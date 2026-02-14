@@ -12,14 +12,14 @@ interface ReviewPageProps {
 
 function ReviewItem({ label, value, isText }: { label: string; value: string; isText?: boolean }) {
   return (
-    <div className="py-3 border-b border-gray-50 last:border-0">
-      <p className="text-sm font-semibold text-gray-800">{label}</p>
+    <div className="py-3 border-b border-gray-50 dark:border-gray-700 last:border-0">
+      <p className="text-sm font-semibold text-gray-800 dark:text-gray-200">{label}</p>
       {isText ? (
-        <div className="mt-1 px-3 py-2 bg-slate-50 rounded-lg border border-gray-100">
-          <p className="text-sm text-blue-700">{value || '\u2014'}</p>
+        <div className="mt-1 px-3 py-2 bg-slate-50 dark:bg-gray-700 rounded-lg border border-gray-100 dark:border-gray-600">
+          <p className="text-sm text-blue-700 dark:text-blue-400">{value || '\u2014'}</p>
         </div>
       ) : (
-        <p className="text-sm text-blue-700 mt-0.5">{value || '\u2014'}</p>
+        <p className="text-sm text-blue-700 dark:text-blue-400 mt-0.5">{value || '\u2014'}</p>
       )}
     </div>
   );
@@ -33,13 +33,13 @@ export function ReviewPage({ formData, onBack, onBackToHome }: ReviewPageProps) 
   return (
     <div className="max-w-3xl mx-auto px-4 py-8">
       <div className="text-center mb-8">
-        <h1 className="text-2xl font-bold text-[#1a365d]">Revisão das Respostas</h1>
-        <p className="text-gray-500 text-sm mt-1">Confira todas as respostas antes de exportar</p>
+        <h1 className="text-2xl font-bold text-[#1a365d] dark:text-blue-300">Revisão das Respostas</h1>
+        <p className="text-gray-500 dark:text-gray-400 text-sm mt-1">Confira todas as respostas antes de exportar</p>
       </div>
 
       {/* Header data */}
-      <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 mb-6">
-        <h2 className="text-lg font-bold text-[#1a365d] mb-4 pb-2 border-b-2 border-blue-100">
+      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 p-6 mb-6">
+        <h2 className="text-lg font-bold text-[#1a365d] dark:text-blue-300 mb-4 pb-2 border-b-2 border-blue-100 dark:border-blue-900">
           Dados do Avaliado
         </h2>
         {headerQuestions.map((q) => (
@@ -48,8 +48,8 @@ export function ReviewPage({ formData, onBack, onBackToHome }: ReviewPageProps) 
       </div>
 
       {/* Anamnese */}
-      <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 mb-6">
-        <h2 className="text-lg font-bold text-[#1a365d] mb-4 pb-2 border-b-2 border-blue-100">
+      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 p-6 mb-6">
+        <h2 className="text-lg font-bold text-[#1a365d] dark:text-blue-300 mb-4 pb-2 border-b-2 border-blue-100 dark:border-blue-900">
           Anamnese
         </h2>
         {anamneseQuestions.map((q) => {
@@ -69,14 +69,14 @@ export function ReviewPage({ formData, onBack, onBackToHome }: ReviewPageProps) 
       </div>
 
       {/* TDAH */}
-      <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 mb-6">
-        <h2 className="text-lg font-bold text-[#1a365d] mb-4 pb-2 border-b-2 border-blue-100">
+      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 p-6 mb-6">
+        <h2 className="text-lg font-bold text-[#1a365d] dark:text-blue-300 mb-4 pb-2 border-b-2 border-blue-100 dark:border-blue-900">
           Rastreio para TDAH
         </h2>
         {tdahQuestions.map((q) => (
-          <div key={q.id} className="py-3 border-b border-gray-50 last:border-0">
-            <p className="text-sm font-semibold text-gray-800">
-              <span className="text-blue-700 mr-1">{q.number}.</span>
+          <div key={q.id} className="py-3 border-b border-gray-50 dark:border-gray-700 last:border-0">
+            <p className="text-sm font-semibold text-gray-800 dark:text-gray-200">
+              <span className="text-blue-700 dark:text-blue-400 mr-1">{q.number}.</span>
               {q.label}
             </p>
             <div className="flex flex-wrap gap-2 mt-2">
@@ -85,8 +85,8 @@ export function ReviewPage({ formData, onBack, onBackToHome }: ReviewPageProps) 
                   key={opt}
                   className={`text-xs px-3 py-1 rounded-full ${
                     tdah[q.fieldKey] === opt
-                      ? 'bg-blue-100 text-blue-800 font-semibold border border-blue-300'
-                      : 'bg-gray-50 text-gray-400 border border-gray-100'
+                      ? 'bg-blue-100 dark:bg-blue-900/40 text-blue-800 dark:text-blue-300 font-semibold border border-blue-300 dark:border-blue-700'
+                      : 'bg-gray-50 dark:bg-gray-700 text-gray-400 border border-gray-100 dark:border-gray-600'
                   }`}
                 >
                   {opt}
@@ -98,8 +98,8 @@ export function ReviewPage({ formData, onBack, onBackToHome }: ReviewPageProps) 
       </div>
 
       {/* TEA */}
-      <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 mb-6">
-        <h2 className="text-lg font-bold text-[#1a365d] mb-4 pb-2 border-b-2 border-blue-100">
+      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 p-6 mb-6">
+        <h2 className="text-lg font-bold text-[#1a365d] dark:text-blue-300 mb-4 pb-2 border-b-2 border-blue-100 dark:border-blue-900">
           Rastreio para TEA
         </h2>
         {(() => {
@@ -110,7 +110,7 @@ export function ReviewPage({ formData, onBack, onBackToHome }: ReviewPageProps) 
             return (
               <div key={q.id}>
                 {showSubHeader && (
-                  <h3 className="text-sm font-bold text-[#1a365d] mt-4 mb-2 pb-1 border-b border-blue-50">
+                  <h3 className="text-sm font-bold text-[#1a365d] dark:text-blue-300 mt-4 mb-2 pb-1 border-b border-blue-50 dark:border-blue-900">
                     {teaSubSectionLabels[q.subSection]}
                   </h3>
                 )}
@@ -125,8 +125,8 @@ export function ReviewPage({ formData, onBack, onBackToHome }: ReviewPageProps) 
       </div>
 
       {/* Actions */}
-      <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
-        <h2 className="text-lg font-bold text-[#1a365d] mb-4">Exportar</h2>
+      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 p-6">
+        <h2 className="text-lg font-bold text-[#1a365d] dark:text-blue-300 mb-4">Exportar</h2>
         <div className="flex flex-col sm:flex-row gap-3">
           <button
             onClick={() => generatePDF(formData)}
@@ -142,16 +142,16 @@ export function ReviewPage({ formData, onBack, onBackToHome }: ReviewPageProps) 
           </button>
         </div>
 
-        <div className="flex gap-3 mt-4 pt-4 border-t border-gray-100">
+        <div className="flex gap-3 mt-4 pt-4 border-t border-gray-100 dark:border-gray-700">
           <button
             onClick={onBack}
-            className="flex items-center gap-2 px-5 py-2.5 text-sm font-medium text-gray-600 bg-gray-100 rounded-lg hover:bg-gray-200 transition cursor-pointer"
+            className="flex items-center gap-2 px-5 py-2.5 text-sm font-medium text-gray-600 dark:text-gray-300 bg-gray-100 dark:bg-gray-700 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-600 transition cursor-pointer"
           >
             <ArrowLeft size={16} /> Editar Respostas
           </button>
           <button
             onClick={onBackToHome}
-            className="flex items-center gap-2 px-5 py-2.5 text-sm font-medium text-gray-600 bg-gray-100 rounded-lg hover:bg-gray-200 transition cursor-pointer"
+            className="flex items-center gap-2 px-5 py-2.5 text-sm font-medium text-gray-600 dark:text-gray-300 bg-gray-100 dark:bg-gray-700 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-600 transition cursor-pointer"
           >
             <Home size={16} /> Início
           </button>
