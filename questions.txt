@@ -1,0 +1,209 @@
+ANAMNESE
+
+
+Nome do avaliado (a):
+Data de nascimento:
+Idade em anos e meses
+Escolaridade -
+Nome do profissional caso tenha sido encaminhado-
+Gênero -
+
+Nasceu de gestação planejada?
+( ) SIM              (  ) NÃO
+Qual idade dos pais na ocasião da gestação?
+Mãe:                             Sem informação (  )
+Pai:                               Sem informação (  )
+A gestação foi tranquila?
+( ) SIM              (    ) NÃO
+Foi bem aceito (a) no núcleo familiar?
+(    ) SIM              (   ) NÃO
+A mãe fez o Pré – Natal?
+(   ) SIM              (   ) NÃO
+Parto?
+(  ) Cesária       (  ) Normal
+Houve complicações no parto?
+(    ) SIM              (  ) NÃO
+Prematuro ou a termo?
+(   ) PREMATURO              (   ) A TERMO
+Foi um bebê choroso?
+(   ) SIM              (  ) NÃO
+Possui Irmãos?
+(  ) SIM              (    ) NÃO
+SE SIM, QUANTOS?  __
+Algum dos pais era usuário de drogas ou alcoólatra?
+(    ) SIM              (   ) NÃO
+Foi amamentado (a) por quanto tempo?
+R: __
+Engatinhou?
+(    ) SIM              (  ) NÃO
+Usou andador?
+(  ) SIM              (    ) NÃO
+Andou com que idade?
+R: ___
+Teve atraso na fala?
+(    ) SIM              (   ) NÃO
+Tem/Teve problemas com dicção, troca de letras ou outros na fala?
+(   ) SIM              (  ) NÃO
+Obs: __
+Entrou na escola ou creche com que idade?
+R: ___
+A adaptação foi tranquila?
+(   ) SIM              (   ) NÃO
+Quais eram suas brincadeiras preferidas na infância?
+R: __
+Teve icterícia neonatal?
+(    ) SIM              (  ) NÃO
+Teve COVID?
+A mãe teve candidíase durante a gestação?
+Usou chupeta ou chupou o dedo?
+(  ) SIM              (   ) NÃO
+Até que idade? R:___
+
+Tinha um objeto transicional, que ficava sempre com ele e tinha dependência para dormir ou se acalmar? ( Cobertor, fraldinha, bichinho de pelúcia etc)
+(  ) SIM              (   ) NÃO
+Tem  dificuldade em atender telefonemas?
+(   ) SIM              ( ) NÃO
+
+Tem problemas gastrointestinais?
+(    ) SIM              (    ) NÃO
+Tem diabetes?
+(    ) SIM              (   ) NÃO
+Tem problemas com o sono?
+(    ) SIM              (  ) NÃO
+Tem dores no corpo?
+(   ) SIM              (  ) NÃO
+Tem casos de autismo na família?
+(   ) SIM              (    ) NÃO
+Costuma sentir vertigens ou tontura?
+(    ) SIM              (  ) NÃO
+Foi uma criança medrosa?
+(    ) SIM              (    ) NÃO
+Não tem noção de perigo? (atravessa a rua sem olhar etc.)
+(   ) SIM              (  ) NÃO
+Tem interesse por outras pessoas?
+(    ) SIM              (   ) NÃO
+Possui outros diagnósticos?
+(    ) SIM              (  ) NÃO
+SE SIM, QUAIS? R:____
+
+Toma medicamentos?
+(   ) SIM              (   ) NÃO
+SE SIM, QUAIS? R:______
+Tem a sensação que está sempre cansado?
+( ) SIM (  )  NÃO
+
+Rastreio para TDAH
+
+1. Tem dificuldade em prestar atenção a detalhes ou comete erros por descuido em atividades do trabalho ou estudo?
+   (   ) Nunca / Raramente
+   (   ) Algumas vezes
+   (   ) Frequentemente
+   (   ) Muito frequentemente
+
+2. Tem dificuldade em manter a atenção em tarefas prolongadas ou tediosas?
+   (   ) Nunca / Raramente
+   (  ) Algumas vezes
+   (   ) Frequentemente
+   (   ) Muito frequentemente
+
+3. Parece não escutar quando falam com você, mesmo sem distrações óbvias?
+   (   ) Nunca / Raramente
+   (   ) Algumas vezes
+   (   ) Frequentemente
+   (   ) Muito frequentemente
+
+4. Tem dificuldade em seguir instruções ou concluir tarefas no prazo?
+   (   ) Nunca / Raramente
+   (   ) Algumas vezes
+   (   ) Frequentemente
+   (   ) Muito frequentemente
+
+5. Tem dificuldade em organizar tarefas ou atividades?
+   (   ) Nunca / Raramente
+   (   ) Algumas vezes
+   (   ) Frequentemente
+   (   ) Muito frequentemente
+
+6. Evita ou adia tarefas que exigem esforço mental prolongado?
+   (   ) Nunca / Raramente
+   (   ) Algumas vezes
+   (   ) Frequentemente
+   (   ) Muito frequentemente
+
+7. Perde objetos necessários para o trabalho, estudo ou atividades diárias (chaves, documentos, celular, etc.)?
+   (   ) Nunca / Raramente
+   (   ) Algumas vezes
+   (   ) Frequentemente
+   (   ) Muito frequentemente
+
+8. Distraí-se facilmente com estímulos externos ou pensamentos irrelevantes?
+   (   ) Nunca / Raramente
+   (   ) Algumas vezes
+   (   ) Frequentemente
+   (   ) Muito frequentemente
+
+9. Esquece compromissos, datas ou tarefas importantes com frequência?
+   (   ) Nunca / Raramente
+   (   ) Algumas vezes
+   (   ) Frequentemente
+   (   ) Muito frequentemente
+
+10. Sente-se inquieto, agitado ou incapaz de relaxar?
+    (   ) Nunca / Raramente
+    (   ) Algumas vezes
+    (   ) Frequentemente
+    (   ) Muito frequentemente
+
+11. Tem dificuldade em permanecer sentado em situações em que se espera que fique quieto?
+    (   ) Nunca / Raramente
+    (   ) Algumas vezes
+    (   ) Frequentemente
+    (   ) Muito frequentemente
+
+12. Fala excessivamente ou interrompe os outros com frequência?
+    (   ) Nunca / Raramente
+    (   ) Algumas vezes
+    (   ) Frequentemente
+    (   ) Muito frequentemente
+
+13. Age impulsivamente, tomando decisões rápidas sem considerar consequências?
+    (   ) Nunca / Raramente
+    (   ) Algumas vezes
+    (   ) Frequentemente
+    (   ) Muito frequentemente
+
+14. Tem dificuldade em esperar sua vez em filas, reuniões ou situações de grupo?
+    (   ) Nunca / Raramente
+    (   ) Algumas vezes
+    (   ) Frequentemente
+    (   ) Muito frequentemente
+
+RASTREIO PARA TEA
+
+
+A. Déficits na comunicação social e interação
+
+1. Tem dificuldade em iniciar ou manter conversas? (  ) Sim   (   ) Não
+2. Tem dificuldade em compreender ou usar gestos, expressões faciais ou tom de voz?
+   (   ) Sim   (   ) Não
+3. Tem dificuldade em fazer amigos ou manter relações sociais significativas?
+   (   ) Sim   (   ) Não
+4. Tem dificuldade em perceber sinais sociais sutis, como ironia, sarcasmo ou piadas?
+   (   ) Sim   (   ) Não
+5. Dificuldade em compreender o ponto de vista ou sentimentos de outras pessoas?
+   (   ) Sim   (   ) Não
+
+B. Comportamentos repetitivos e interesses restritos
+
+6. Realiza comportamentos repetitivos ou estereotipados (ex.: balançar, repetir palavras ou movimentos)? (   ) Sim   (   ) Não
+7. Possui interesses altamente focados ou intensos em temas específicos? (   ) Sim   (   ) Não
+8. Apresenta resistência a mudanças na rotina ou dificuldades em lidar com imprevistos?
+   (   ) Sim   (   ) Não
+9. Tem sensibilidade sensorial (sons, texturas, luzes, cheiros) que interfere em atividades diárias? (   ) Sim   (   ) Não
+10. Dificuldade em alternar entre tarefas ou manter foco em atividades não relacionadas ao interesse principal? (   ) Sim   (  ) Não
+
+C. Desenvolvimento e padrão de comportamento
+
+11. Observa diferenças significativas de comportamento ou habilidades em relação a outras pessoas da mesma idade? (  ) Sim   (  ) Não
+
+12. Demonstrou sinais de TEA na infância (mesmo que não diagnosticado)? (  ) Sim   ( ) Não
